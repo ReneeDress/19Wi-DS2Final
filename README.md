@@ -4,22 +4,22 @@
 
 ```bash
 ├── P1
-│		  ├── OnlineJudge纯享版
-│			├── 含输出提示版
+│		├── OnlineJudge纯享版
+│		├── 含输出提示版
 ├── P2
-│			├── Web版本
-│			│			├── backend				// Django后端文件夹
-│			│			├── example				// Django相关配置
-│			│			├── frontend			// Vue.js前端文件夹
-│			│			├── manage.py			// Django主要配置
-│			│			├── db.sqlite3		// 未使用
-│			│			├── database.txt	// 程序自动生成
-│			│			├── sortedwl.txt 	// 程序自动生成
-│			├── 命令行版本
-│			│			├── Post					// 语料库文件夹
-│			│			├── main.py				// 程序文件
-│			│			├── database.txt	// 程序自动生成
-│			│			├── sortedwl.txt 	// 程序自动生成
+│		├── Web版本
+│		│			├── backend				// Django后端文件夹
+│		│			├── example				// Django相关配置
+│		│			├── frontend			// Vue.js前端文件夹
+│		│			├── manage.py			// Django主要配置
+│		│			├── db.sqlite3		// 未使用
+│		│			├── database.txt	// 程序自动生成
+│		│			├── sortedwl.txt 	// 程序自动生成
+│		├── 命令行版本
+│		│			├── Post					// 语料库文件夹
+│		│			├── main.py				// 程序文件
+│		│			├── database.txt	// 程序自动生成
+│		│			├── sortedwl.txt 	// 程序自动生成
 ```
 
 
@@ -41,7 +41,6 @@ OnlineJudge纯享版默认为11个样例自动执行，以回车分割。可在m
 ### 开发环境
 
 * Python 3.7.0
-
 * Django 2.1
 * Vue/cli 4.4.1
 
