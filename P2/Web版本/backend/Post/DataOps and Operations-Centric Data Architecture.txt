@@ -1,0 +1,26 @@
+DataOps and Operations-Centric Data Architecture
+
+Eric Estabrooks from DataKitchen spoke at this year's Data Architecture Summit 2019 Conference about how DevOps tasks should be managed for data architecture. "DataOps" is a collaborative data management practice, and is emerging as an area of interest in the industry.
+
+Similar to how DevOps resulted in a transformative improvement in software development, and how Lean has resulted in improvements in manufacturing, DataOps aims to create an agile data culture in organizations.
+
+Currently, data teams at most organizations have high errors in data management operations every month, due to factors like incorrect data, broken reports, late delivery, and customer complaints. Most companies are also slow in creating new development environments as well as deploying data analytic pipeline changes to production.
+
+Estabrooks mentioned that hero mentality that we see in some teams is actually career-ending, and is bad for individual team members and also for the team as a whole. Instead, he recommends teams to create repeatable processes for quality and predictable database builds and deployments. He referred to the book The Phoenix Project for best practices in DevOps area.
+
+A DataOps mindset change is needed in order to power agile data culture; this includes transition from manual operations to automated operations, a tool-centric approach to a code-centric one, as well as integrating quality into product features from earlier phases in the data management lifecycle.
+
+Estabrooks discussed a seven-step process for diverse teams in organizations (data analysts, data scientists, and data engineers) to realize the DataOps transformation and deliver business value quickly and with high quality. The steps include the following:
+
+Orchestrate two journeys (analytic processes and faster deployments to production)
+Add tests and monitoring
+Use a version control system
+Branch and merge (of any and all scripts related data lifecycle)
+Use multiple environments
+Reuse amd containerize
+Parameterize your processing
+He also explained the DataOps centric architecture model and how it's different from traditional canonical data architecture. In canonical data architecture we only think about production, not the process, when making changes to production. On the other hand, the DataOps data architecture makes what's in production a "central idea." Teams think first about changes over time to their code, servers, tools, and monitoring for errors, as first class citizens in the design.
+
+He described the functional and physical perspectives of DataOps architecture, which include a DataOps platform consisting of separate components for storage, metadata, authentication, secrets management, and metrics.
+
+Estabrooks concluded the presentation by listing the goals of DataOps architecture, which include updating and publishing changes to analytics within a short time without disrupting operations, discovery of data errors before they reach published analytics, and creating and publishing schema changes as frequently as every day.

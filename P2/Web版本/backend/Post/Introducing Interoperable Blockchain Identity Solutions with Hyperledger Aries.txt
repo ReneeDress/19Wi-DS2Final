@@ -1,0 +1,25 @@
+Introducing Interoperable Blockchain Identity Solutions with Hyperledger Aries
+
+In a recent blog post, the Hyperledger project announced their 13th project called Hyperledger Aries, which provides an interoperable identity management toolkit that enables creating, transmitting and storing verifiable digital certificates. Using this toolkit, organizations can support secure, interoperable peer-to-peer messaging across different distributed ledger technologies (DLT).
+
+Identity management continues to be one of the most important and challenging aspects of building DLT applications. Tykn, a digital identity management organization, classifies the problem as:
+
+Most of the current identity management systems are weak and outdated. Paper-based systems are at risk of loss, destruction or fraud. Digital systems, if centralized, are honeypots of personal data for hackers. Constantly subject to leaks and breaches. Since 2017 alone, more than 600 million personal details – such as addresses or credit card numbers – have been hacked, leaked or breached from organizations. Identities need to be portable and verifiable everywhere, any time, and digitization can enable that. But being digital is not enough. Identities also need to be private and secure.
+
+Hyperledger Aries plans to address some of these identity challenges through the use of verifiable digital credentials. Nathan George, CTO Sovrin Foundation and Hyperledger Aries sponsor, explains:
+
+Identity is commonly cited as one of the most promising use-cases for distributed ledger technology. Initiatives and solutions focused on creating, transmitting and storing verifiable digital credentials will benefit from a shared, reusable, interoperable tool kit.
+
+The Hyperledger project has been very clear that Aries is not a blockchain, nor is it an application. The toolkit has roots from both the Hyperledger Indy, from a resolver implementation perspective, and Hyperledger Ursa, which it has leveraged some cryptographic functionality from. However, Hyperledger Aries does provide a blockchain interface layer, known as a resolver, that allows for the creation and signing of blockchain transactions. It also includes secure storage that acts as a cryptographic wallet where secrets can be stored and includes an implementation of a Decentralized Key Management System (DKMS) which is currently being incubated in Hyperledger Indy.
+
+Aries includes an encrypted messaging system for off-ledger interactions between clients across different transport protocols and the ability to abstract higher level protocols through API-based secure messaging interactions.
+
+Additional technology from another Hyperledger project, Hyperledger Ursa, is being leveraged within Aries. An implementation of Zero Knowledge Proof (ZKP) capable W3C verifiable credentials using the ZKP primitives is being included. ZKP-capable W3C verifiable credentials can represent the same knowledge that may be found in physical credentials, such as a driver’s license, passport or health insurance card, but includes privacy-preserving and data-minimization features.
+
+While the generic Aries resolver interface will support Hyperledger Indy, it is flexible so that developers can build a pluggable method using another decentralized identifier (DID) method resolver based upon Hyperledger Fabric or Ethereum.
+
+Moving forward, the project is focused on enhancing identity storage and exchange capabilities. George explains:
+
+The ultimate goal of Hyperledger Aries is to provide a dynamic set of capabilities to store and exchange data related to blockchain-based identity. These capabilities will range from the secured, secret storage of data, such as private keys, up to the capability of globally accessible data that can be viewed and accessed by anyone. An example of such support is the creation of a secure storage solution similar to the wallet available in Hyperledger Indy today.
+
+Developers can learn more about Hyperledger Aries by visiting their wiki or joining the Hyperledger chat channel.

@@ -1,0 +1,23 @@
+IBM Launches Equal Access Toolkit to Help Developers Write Accessible Applications
+
+IBM recently released the IBM Equal Access Toolkit and the Accessibility Checker, two new open-source toolkits that strive to give designers, developers, and testers a set of tools to make websites and applications accessible.
+
+Simeon McAleer, manager in the IBM Accessibility Research team, explained in the release blog post the motivation behind the toolkits:
+
+[…] nearly 1 in 4 adults in the U.S. face some type of disability
+[…] an industry sample has found that in 2020 over 98 percent of home pages had a detectable accessibility error.
+Accessibility can be forgotten or left until too late in the process when it is difficult to retrofit the site or application. Knowledge, discipline and tools are all essential to building in accessibility throughout a development process.
+
+The new toolkit and checker may be embedded directly in developers’ and testers’ workflow. The IBM Equal Access Toolkit is a holistic set of guidelines that addresses the fact that first-class accessible products result from teamwork with the project stakeholders across the project lifecycle. The toolkit identifies five phases and provides accessibility objectives and guidelines for each.
+
+The first phase (Plan) seeks to identify project needs and inject accessibility into sprints and releases. The first phase involves primarily product owners (offering managers in IBM parlance), architects, and team leads.
+
+The second phase (Design) captures the necessity for Interaction, visual, and content designers to address almost all aspects of the Web Content Accessibility Guidelines (WCAG).
+
+The third phase (Develop) involves front-end developers implementing the design specifications. In the fourth phase (Verify), testers are encouraged to verify the accessibility of the product. The fifth and last phase (Launch) ensures that accessibility reports are available for release managers and QA leads to review and improve on for future releases.
+
+The accessibility checker is a browser extension that automates the evaluation of accessibility issues. The release note provides a screenshot that shows the extension at work:
+
+As can be seen in the screenshot, the extension gives warning about accessibility issues and pinpoints the location (for instance the HTML element) or cause of the issue for developers to investigate and remedy.
+
+The accessibility checker is available via its GitHub repository. The corresponding browser extension can be downloaded from the Chrome or Firefox stores. The checker can be run in a batch configuration in a variety of Node.js-based environments for automated testing.

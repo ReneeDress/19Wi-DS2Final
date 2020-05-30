@@ -1,0 +1,26 @@
+Distributed Messaging Framework Apache Pulsar 2.0 Supports Schema Registry and Topic Compaction
+
+The latest version of open-source distributed pub-sub messaging framework Apache Pulsar enables companies to move "beyond batch" by acting on data in motion. The Apache team recently announced the availability of Pulsar 2.0.1 streaming messaging solution. The new version supports Pulsar Functions, Schema Registry and Topic Compaction.
+
+Other features in the new release include:
+
+Upgrade of Apache BookKeeper to version 4.7
+Performance improvements
+Compatibility with pre-2.0 releases of Pulsar
+Pulsar Functions: This stream-native processing capability was first announced as a preview feature earlier this year. Pulsar Functions are lightweight compute processes that can be used to apply transformations and analytics directly to data as it flows through Pulsar, without requiring external systems or add-ons. Functions are executed each time a message is published to the input topic.
+
+Schema Registry: The Schema Registry simplifies development of data-driven applications by providing developers the ability to define and validate the structure and integrity of data flowing through Pulsar. It supports a built-in registry that enables clients to upload data schemas on a per-topic basis. Those schemas dictate which data types are recognized as valid for that topic. The schema registry is currently available only for the Java client.
+
+Topic Compaction: This is a new enhancement to Pulsar in coordination with the Apache Bookkeeper solution for streaming data storage that improves performance. Topic compaction is a process that runs in the Pulsar broker to build a snapshot of the latest value for each key in a topic. The topic compaction process reads through the backlog of the topic, retaining only the latest message for each key in a compacted backlog. It is non-destructive so the original backlog is still available for the users who need it. Users can control when Topic Compaction occurs by triggering it manually via a REST endpoint.
+
+InfoQ spoke with Matteo Merli, the co-founder of Streamlio and the architect and lead developer of Pulsar while at Yahoo, about Pulsar framework and its product roadmap.
+
+InfoQ: How does Pulsar compare with other messaging frameworks?
+
+Matteo Merli: Like a number of other frameworks, Pulsar provides distributed messaging capabilities accessible by a variety of clients. Pulsar differentiates itself with capabilities that make it possible to keep up with the requirements of modern data-driven applications and analytics without the cost and complexity of alternatives. More specifically, those capabilities include better throughput and latency, scalability, stream-native function processing, and support for both publish-subscribe messaging and message queuing, multi-datacenter replication, security and resource management.
+
+InfoQ: What is the Pulsar product roadmap and upcoming features?
+
+Merli: As an open source project, the roadmap for Apache Pulsar is shaped by the Pulsar community of contributors and users. Current development work that is expected to release soon includes support for additional access interfaces, an expanded set of connectors to data sources and repositories, enhancements to provide multi-tier storage capabilities, an expanded set of supported schema formats.
+
+The Pulsar team released the 2.0.1 version last week which includes fixes to Python packages on PyPI and REST APIs provided by Pulsar proxy. For more information on the new release, check out the release notes on Pulsar's website.

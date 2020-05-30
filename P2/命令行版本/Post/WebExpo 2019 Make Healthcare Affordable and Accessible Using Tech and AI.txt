@@ -1,0 +1,31 @@
+WebExpo 2019: Make Healthcare Affordable and Accessible Using Tech and AI
+
+Anna Zawilska, lead user researcher at Babylon Health, recently presented at Webexpo 2019 in Prague the lessons learnt from the experience of delivering remote healthcare through a combination of technology and Artificial Intelligence (AI). Babylon Health came to adjust three key assumptions underpinning product development.
+
+Zawilska started her talk mentioning a study from the World Healthcare Organization, according to which at least 50% of the world’s population cannot obtain essential health services. In that context, combining the ubiquity of mobile devices with the diagnosis power of Artificial Intelligence has the potential to broaden the access of healthcare services. Babylon’s engineers, doctors, and scientists developed an AI system that can receive data about the symptoms someone is suffering from, compare the information to a database of known conditions and illnesses to find possible matches, and then identify a course of action and related risk factors.
+
+In the Babylon mobile application, a typical user flow would start with the application asking the user (patient) to describe the symptoms he or she is experiencing. In a second stage, depending on the declared symptoms, further questions would be asked to further refine the set of possible conditions affecting the patient. In a third phase, recommendations would be made.
+
+The first assumption the Babylon team made was that patients would trust their Chatbot (where patients enter their symptoms) as much as they trust doctors. However, key observations coming from actual experience showed crucial differences in user behaviour with a human doctor vs a machine-based technology.
+
+Patients typically trust that doctors are knowledgeable and qualified. This trust did not translate to the Chatbot. Furthermore, while a patient would rarely get up and leave a consultation with a human doctor before it’s over, Chatbot users were much more likely to end the consultation early. Lastly, while patients usually believe that the advice given by the doctor should be followed, Chatbot users had a lower propensity to trust advice from the Chatbot and follow the given prescriptions.
+
+Babylon Health concluded that user trust cannot be assumed, and as a consequence, they needed to design for increasing trust. Zawilska provides an example of a change made to the user interface: when a hypothetical user would be asked, “Do you have any problem moving your neck?”, the application would also provide an explanation of why the question is being asked. In this case, for instance, the application would display a message along the lines of, “I’m asking this because I’m trying to rule out a tension headache. For people of your profile, neck issues along with a headache are a strong predictor of tension headaches.”
+
+The issue of trust has a specific prevalence in the healthcare industry. Zawilska quoted recent controversies (involving Theranos, or DNA sequencing) which contributed to eroding the trust in the latest innovations in health-care technology.
+
+The second assumption that was made was that clinical safety was the only criteria by which to evaluate the success of Babylon’s predictive AI. AI is typically trained with large amount of data, with the resulting AI model being tested against a test set using some evaluating criteria. Zawilska explained that using clinical safety as a sole criteria for validating the AI model presented a higher risk to adversely effect the user experience.
+
+As a matter of fact, optimizing for critical safety may mean that the AI would recommend in some cases that a patient visit the emergency room (ER), while the patient's condition need not necessarily require them to do so. A large proportion of these occurrences may result in the patient attributing a lower value to the application.
+
+On the other hand, optimizing solely for user experience had its own set of risks. Zawilska mentions that the application could theoretically, independently of the user condition, display a comforting message and recommend that the user take pain killers. This may result in a better user experience, albeit with obvious health risks.
+
+Babylon thus decided to evaluate its AI on the dual criteria of clinical safety and user experience. Zawilska explained that the sweet spot consisted in sending patients to the ER when needed, and reassuring and prescribing when appropriate.
+
+The third assumption mentioned by Zawilska, and which impacted product development, was to “move fast and break things”. The motto, popularized by Facebook’s Mark Zuckerberg, emphasizes the need for speed in delivery of technology. In recent years, criticism has emerged, with a recommendation to replace “minimum viable products” with “minimum virtuous products”, in which new offerings test their effects on stakeholders and build in guards against potential harms.
+
+Babylon Health instead follows a “move fast when it is safe” approach. Zawilska gave examples of scenarios in which user interface changes may potentially result in user behaviours with adversarial effects on clinical safety. In those cases, the company would first study and calibrate those effects before deciding to move forward with the proposed changes.
+
+Babylon is a UK start-up with a self-declared mission to “put an accessible and affordable health service in the hands of every person on earth”. Babylon seeks to achieve this goal by leveraging artificial intelligence (AI) tools combined with human medical expertise.
+
+Webexpo is a conference for developers, UX professionals, designers, and marketers to meet up and share their experience. WebExpo 2019 took place on September 20-22, 2019, in Prague, Czechia.

@@ -1,0 +1,69 @@
+The Risk of Climate Change and What Tech Can Do: QCon London Q&A
+
+Data centres create more emissions than the aviation industry due to their energy usage and 24x7 availability, and the growth of the cloud computing and the mining of cryptocurrencies is increasing the impact technology is having on our climate. Moving existing servers to providers who use renewable sources of electricity could lead to planet-wide climate improvements. Jason Box, climatologist & professor of glaciology at The Geologic Survey of Denmark and Greenland (GEUS), and Paul Johnston, CEO at roundaboutlabs, will talk about the risk of climate change and what tech can do at QCon London 2019.
+
+Many tech people are unaware of the huge impact that technology has on the Greenhouse Gas Emissions globally, and even those who are aware feel hugely disempowered in the area of climate change. However, several major cloud providers are starting to act. Google offset 100% of their cloud usage with renewable energy, Microsoft purchases carbon credits to offset 100% of their cloud usage, and AWS have four public regions that are powered by 100% renewable energy. Users of these cloud computing vendors can now begin to make an informed choice with regards to environmental impact.
+
+Box and Johnston argue that people who are currently working with vendors that do not offer such programs should start to ask for their data centres and cloud infrastructure to be powered by renewable energy. This should significantly increase requirements for renewable energy, which in turn should increase the demand across the network. Customers should also ask for increased transparency on environmental impact, and request public disclosure of associated data, such as the carbon footprint as a line item on each account.
+
+Individual organisations can also contribute to reducing the impact of emissions. For example, the QCon team wants to offset carbon from flights into the host city of the conference, and is matching funds with attendees who offset their carbon footprint by contributing to the Greenland Reforestation program.
+
+As part of QCon London, taking place in the Queen Elizabeth II Conference Centre, March 4-8th, InfoQ spoke with Jason Box and Paul Johnston about what is causing climate change and what tech can do to reduce it.
+
+InfoQ: Why is our climate heating, and what is causing this?
+
+Jason Box: Mainly fossil fuel combustion and secondarily deforestation and biomass burning have elevated atmospheric CO2 by 50% since year 1850. The radiative effect is equivalent to 1.7 W light bulbs shining downward over every square meter of the Earth’s surface. Earth orbital changes had the climate cooling over the last 2000 years until ~1850 when a sharp warming began and forestalled the next Ice Age, by a large margin.
+
+Paul Johnston: It’s pretty clear to me from the evidence I’ve seen that it’s humanity that is causing these changes in our climate, and it’s largely through the burning of fossil fuels. This is backed up by 97% of scientists too, so this isn’t just us saying it.
+
+InfoQ: What can be done to slow down the pace of climate change?
+
+Johnston: We need to make big changes, and very quickly. For that, we need broad agreement and political will across the major countries of the world to implement the Paris Agreement, although even that is probably only the minimum that we need to do. However, that’s a big answer, to a big question. A better answer is probably to make your voices heard in the right forums and vote for parties in elections that best describe these values.
+
+Box: Limiting emissions will slow the increasing intensity of climate change. However, not without removing several hundred Gtons of carbon from the atmosphere will we have a stable climate. How to drawdown atmospheric carbon will require a portfolio response, that is, no single solution can do it. Massive reforestation won’t get us there. I think other stabilization wedges will come from biotechnology, meaning, plant-based CO2 sequestration. Nature developed a high tech solution that sucks carbon from the atmosphere. This technology is self-replicating and needs only sunlight and water to do its thing. This tech is called photosynthesis… It’s the OS of plants.
+
+InfoQ: How can tech help to reduce climate change?
+
+Johnston: Most tech people feel hugely disempowered in the area of climate change. Most are also unaware of the huge impact that technology has on the Greenhouse Gas Emissions globally. Data centres create more emissions than aviation due to their energy usage and their constant 24x7 availability. The growth of the cloud is a driver of growth in this area too. Cryptocurrencies and mining of cryptocurrencies have also seen a huge spike in data centre energy usage over the past few years, with Bitcoin mining currently using around the same amount of electricity as Singapore daily (and Bitcoin is definitely not incentivising green energy as many believe). So there is something simple that the tech world can do:
+
+Move their servers to data centres and cloud providers who use renewable sources of electricity.
+
+A quick answer is to look at Google who offset 100% of their cloud usage with renewable energy, Microsoft who purchase carbon credits to offset 100% of their cloud usage and AWS who have four public regions that are powered by 100% renewable energy: Ireland, Frankfurt, Montreal and Oregon.
+
+Box: The outlook is good for the small country of Greenland. Greenland has a large and unexploited hydropower potential and a government very interested in increasing its economic sovereignty through data centers. The water is cool and the political system is willing.
+
+InfoQ: What can be the impact if a majority of the data centres migrates to renewable energy?
+
+Box: We have more of a chance of meeting the Paris Climate agreement. Right now limiting global warming to under 2 C looks doubtful. Data Centers must and already are going renewable.
+
+As attention turns to the overlooked north, as the Arctic opens up, we’ll see the Arctic more on the geopolitical agenda.
+
+Johnston: If customers start to ask for their data centres and cloud to be powered by renewable energy then it should significantly increase the data centres requirements for renewable energy, which should in turn increase the demand across the network. As the data centre market is a growing market within the energy sector, this means that it should increase investment in renewable technologies, and that would only improve the chances of better technologies reaching the wider market more quickly.
+
+It’s not only a win for the customer, but could well lead to planet wide improvements. My hope is that it will also bring the very wealthy tech companies who run the major cloud services into the equation in terms of innovation and resources as well.
+
+InfoQ: How can companies know for sure that providers will use renewable sources of energy for the servers where their applications are running?
+
+Johnston: We can’t without data. At present, we are reliant upon the companies themselves sharing their own data with customers. Unfortunately, the data is relatively difficult to understand as well, although giving percentages is helpful, and 100% is a useful number, although most ordinary people don’t understand what "100% offset" really means. This would be significantly improved though, if the providers gave the carbon footprint as a line item on each account, because it would allow customers to both see the impact of their technology and give them a way of mitigating their impact. I am not sure if that will ever happen though.
+
+Some of the providers, e.g. Google and Microsoft, would be able to state that their cloud services are 100% offset and so an account carbon footprint could be zero, although even that is contentious as it depends on how an offset is used as to whether it truly offsets the carbon that is used. It is an area that really needs work.
+
+Box: Does tracking electrons require cryptocurrency?
+
+InfoQ: Can you tell us about Greenland Trees? Who are they and what’s their mission?
+
+Box: Since 2015, I’ve been busy with tree planting already in S. Greenland, and the trees are thriving. In fact, people have planted 300k trees since the 1970s. Several trees planted more than a century ago in 1892 remain alive.
+
+Picture the climate of Oslo. It’s the same latitude. The climate at the top of the fjords in Greenland is sunny.
+
+In partnership with QCon, we’ve established a carbon drawdown/ carbon offset service, a charity with dual EU charity and 501c3 US tax status. Go to GreenlandTrees.org to offset your air travel and watch our forests grow. We’ll be reporting on the progress of growth for the indefinite future.
+
+I’m very familiar with the logistics to get seedlings from Icelandic nurseries to Greenland at a cost of 3.5 euros per seedling. So, you can offset a San Francisco<>London for 40 EUR with 10 seedlings. Please folks, get on your phone and set your legacy. The trees will be there after we are.
+
+InfoQ asked Roxanne Beverstein, co-founder of and VP of sales for C4Media, about the collaboration between QCon and Greenland Trees:
+
+Roxanne Beverstein: We think that it’s our responsibility as a business to consider our impact on the environment; this is why we’ve started the Carbon Offset program for our QCon events. We know that the single largest component to our carbon footprint is from those who fly in to attend the conference. Therefore, we’ve chosen to focus on offsetting carbon from aviation and will be contributing to Jason’s Greenland Reforestation program called Greenlandtrees.org.
+
+QCon will be contributing up to $5K USD in matching funds to those attendees who offset their carbon footprint by contributing to Jason’s Greenland Reforestation program. This is a crowdfunded program with a goal of $40K USD, which will allow Jason and his team to plant 10K trees or offset the carbon created by 1,000+ round trip flights from San Francisco to London. As per Jason, "This program will help bring down the atmospheric carbon and put a dent in climate change." The current funding for the program stands at $5,159.
+
+There is information on this program on the QCon London site with a link to the reforestation project in the "unofficial event" section of the site. We are hosting a breakfast with Jason on Wednesday, March 6, from 7:15-8:20am at QCon London (Windsor room on the 5th Floor), which we’re calling "Breakfast with a Climatologist"

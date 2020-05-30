@@ -1,0 +1,19 @@
+CSS Containment Now a Web Standard
+
+The CSS Working Group recently published the CSS Containment Module Level 1 as a new web standard. This CSS module specifies the contain property, which can be used to indicate elements whose subtree is independent of the rest of the page in some manner. That independence may then be used by user agents to provide much stronger optimizations when rendering a page, while allowing authors to be confident that their page won’t accidentally fall into a slow code path due to an innocuous change.
+
+The main goal of CSS Containment standard is to improve the rendering performance of web pages by skipping some document subtrees in parts of the page rendering process. Rachel Andrew, editor in chief of Smashing Magazine, explains in an article dedicated to the new web standard:
+
+When the content of our box is changed, the browser has to consider that any of the elements may have changed. Browsers are in general pretty good at dealing with this, as it’s a common thing to happen. That said, as the developer, you will know if each of the components is independent, and that a change to one doesn’t affect the others, so it would be nice if you could let the browser know this via your CSS. This is what containment and the CSS contain property gives you.
+
+The module specification specifies a contain property to allow predictable isolation of a subtree from the rest of the page. The contain property indicates that an element and its contents are independent of the rest of the document tree in some manner that is specified by picking one of five values: strict, content, size, layout, paint.
+
+The layout value of the contain property indicates that the internal layout of the element is not affected by anything outside the element and the element’s contents cannot have any effect on the ancestors. The paint value indicates that descendants of the element cannot be displayed outside its bounds and that nothing will overflow this element (or if it does it won’t be visible). The size value means that the element’s dimensions are independent of the element’s contents. This means that the box size for the element can be computed irrespective of the element’s children. The content value is a shortcut for contain: layout paint, while the strict value is a shortcut for layout paint size.
+
+The contain property allows the browser to recalculate layout, style, paint, size, or any combination of them for a limited area of the DOM and not the entire page, leading to obvious reflow and repaint performance benefits, especially in large pages. The performance gains are large enough for Bloomberg to support Igalia’s work on the CSS Containment implementation in Chromium. Manuel Rego Casasnovas provided in his talk at CSSconf EU 2019 an example of UI with over 10,000 cells whose text content is changing constantly, and which could be rendered 4x faster. Rego explained Bloomberg’s motivation:
+
+Bloomberg has some quite complex UIs and [they are] getting benefits of using CSS containment on some of them.
+
+Paul Lewis described to performance-minded developers which parts of the rendering process are affected by changes in DOM property. The site csstriggers additionally gathers the properties that trigger a layout, according to the browser used.
+
+CSS containment is implemented in modern browsers with the exception of Safari.

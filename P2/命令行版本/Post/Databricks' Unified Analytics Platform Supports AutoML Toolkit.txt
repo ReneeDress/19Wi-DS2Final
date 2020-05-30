@@ -1,0 +1,21 @@
+Databricks' Unified Analytics Platform Supports AutoML Toolkit
+
+Databricks, the company behind the Apache Spark data analytics engine, recently announced the Unified Data Analytics Platform, including an automated machine learning tool called AutoML Toolkit.
+
+The toolkit can be used to help data science teams be productive by automating various steps of the data science workflow  – including feature engineering, hyperparameter tuning, model search, and deployment – for a fully controlled and transparent augmented ML experience. This is available in Databricks Labs custom solutions for citizen and expert data scientists. AutoML Toolkit executions are automatically tracked in MLflow.
+
+The Databricks Labs project is an experimental end-to-end supervised learning solution for automating the steps like feature clean-up, feature vectorization, model selection and training, hyper parameter optimization and selection, batch prediction and logging of model results and training runs.
+
+The Unified Analytics Platform includes three main components:
+
+Databricks Workspace: With the goal of unifying data science and engineering, the workspace handles all analytic processes (from ETL to model training and deployment), leveraging shared interactive notebooks, tools, and APIs.
+Databricks Runtime: The runtime component helps with data preparation and continuously trains and deploys the models for AI/ML applications. It supports integrations between Hyperopt, MLlib, and MLflow, which enables distributed conditional hyperparameter tuning, automated tracking, and enhanced visualizations. The users can get started with pre-configured clusters including some of the popular ML frameworks like Hadoop, Kafka, Spark, Parquet, TensorFlow, Keras, and Scikit Learn.
+Databricks Cloud Service: The cloud service helps with managing the infrastructure complexity by offering a fully managed service on the cloud. The cloud offerings include Microsoft Azure integration and Amazon Web Services (AWS).
+Databricks is also offering third-party machine learning integrations with H2O's Sparkling Water, DataRobot and XGBoost.
+
+For more information on the new analytics platform and AutoML toolkit, check out the following additional resources:
+
+Hyperparameter Tuning Guide
+Best Practices for Hyperparameter Tuning with MLflow (slides, video)
+Advanced Hyperparameter Optimization for Deep Learning with MLflow (slides, video)
+Automating Predictive Modeling at Zynga with PySpark and Pandas UDFs

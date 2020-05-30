@@ -1,0 +1,36 @@
+Ockam Brings Blockchain Serverless Identification to IoT Devices
+
+Ockam is a serverless platform that aims to make it easier for IoT developers to add blockchain-based identity, trust, and interoperability in their IoT devices. Ockam has recently open sourced its SDK for Golang.
+
+By embedding the Ockam SDK into their devices, developers can make them part of the Ockam blockchain network, a decentralized, open platform that enables secure cryptographic identity management based on a recent W3C standard called Decentralized Identifiers (DID).
+
+Decentralized Identifiers (DIDs) are a new type of identifier for verifiable, "self-sovereign" digital identity. DIDs are fully under the control of the DID subject, independent from any centralized registry, identity provider, or certificate authority. DIDs are URLs that relate a DID subject to means for trustable interactions with that subject.
+
+The idea of self-sovereign identity has its roots in the 1970's but it is thanks to blockchain that it is becoming a reality.
+
+InfoQ has spoken with Ockam CEO and founder Matthew Gregory to learn more.
+
+InfoQ: When describing Ockam, you used the moniker "Heroku for IoT". Could you explain the vision behind Ockam?
+
+Matthew Gregory: One of the core benefits of Ockam is how the SDK abstracts away complex infrastructure. Rather than standing up complex cryptography infrastructure by hand, the developers building on top of Ockam incorporate simple function calls in their code base to get the benefits of Public Key Infrastructure without needing special expertise. Just like Heroku's "git push master" unlocked the magic of the cloud, Ockam helps developers unlock innovation in IoT.
+
+InfoQ: What are the most important features that Ockam provides to IoT developers? What are the issues it attempts to solve?
+
+Gregory: Every developer gets to the point in a project where they must choose how to add identity, trust and interoperability into their IoT devices. Yesterday they could only choose to:
+
+Do nothing: this is exceptionally common and leads to botnets and massive security vulnerabilities in devices.
+Build their own end-to-end IoT infrastructure: this is a massive undertaking and costs million of dollars and requires specific expertise.
+Buy an IoT platform vendor solution: end-to-end platforms are complex to implement, have high switching costs and lead to vendor lock-in which limits interoperability.
+Today, with the Ockam SDK, developers now have a better option: write a couple lines of code to give their device a secure immutable identity that is interoperable with the rest of their technology stack.
+
+InfoQ: Ockam uses blockchain to provide immutable, cryptographically secure device identities. Could you elaborate more and explain how concretely you use blockchain in your platform? How does Ockam ensure privacy of any user data?
+
+Gregory: Blockchain is not what Ockam is; rather, blockchain is just one component in how Ockam works. Blockchain's killer feature is identity. Ockam uses cryptographically secure identity to be certain as to which IoT device sent what data. As part of the Ockam blockchain network protocol, we utilize the DID standard for identities, and every exchange of data must be signed with the secret key of the device that sent that data.
+
+The privacy of user data can be handled with many of the widely used best practices of data encryption, and access permissions.
+
+I go deeper into this in my blog post "The Nine-Factors of a well tuned IoT network".
+
+InfoQ: The recent Ockam SDK is written in Golang. What was the rationale for that? Will there be support for more languages?
+
+Gregory: The underlying codebase of Ockam is written in Golang. Thus, it was a natural decision for the first language support in the SDK to also be in Golang. We will support all sorts of languages in the near future. C, C++, and Python are all in the top of the list.

@@ -1,0 +1,25 @@
+New Proposal Improves Client-Side Video Editing by Four Times
+
+Melanie Richards discussed the client-side video editing proposal that the Edge team at Microsoft has been working on. The proposal is in the incubation phase at the Web Platform Incubator Community Group(WICG) and aims at enabling dramatically faster client-side video editing experience and better performance. The proposed interface includes methods for trimming and concatenating videos.
+
+Richards explained the motivation behind the new proposal:
+
+[We seek to] solve familiar use cases in more efficient ways. We heard from the media partners that providing a low-latency media experience on the web can be challenging. If you go to the server-side route, servers can be expensive and [increase latency]. […] On the client side, it can take two hours to process edits on a two-hour-long video. […] To address this, we prototyped a MediaBlog API which enables client-side media editing, such as trimming and concatenation.
+
+The client-side video editing proposal is incubated at the WICG and is developed by incorporating the feedback of companies that have a need for this technology. Early experiments have been conducted with the social-learning company FlipGrid which is listed as having Microsoft Corporation as a parent company, and shows dramatic improvements in processing speed:
+
+[Early prototypes] used at the social-learning site FlipGrid indicates that video editing with the proposed client-side API can be 4x faster than the standard approach, going from a three-second processing to 768-millisecond.
+
+The proposal introduces a MediaBlob interface that extends the regular Blob (Binary Large OBject) interface and a MediaBlobOperation interface that is used to batch the proposed media editing operations. The MediaBlobOperation interface includes, as of the publication date of this news piece, methods for three operations: trimming, splitting, and concatenating videos.
+
+The trimming operation requires a start time and an end time. When executed on a MediaBlob, it will return a MediaBlob that keeps the content of the original MediaBlob that belongs to the parameterized time interval, and discards the rest.
+
+The split method allows the author to split a Blob into two separate MediaBlobs at a given time that is passed as parameter. The concat method allows developers to take two MediaBlobs and concatenate them.
+
+The three operations are batched by default, and invoking the methods does not lead to the execution of the operations. 
+
+The previous sample code illustrates a program that converts a Blob into a MediaBlob, and constructs from that a MediaBlobOperation. When running the finalize method, the client-side runtime will extract the content between 4 seconds and 6 minutes (360 seconds) after the beginning of the Blob, concatenate a second Blob to that, and run a callback function on the result.
+
+The Blob interface was introduced in the File API proposal (hosted by the W3C) and represents immutable raw binary data, and allows access to ranges of bytes within the Blob object as a separate Blob.
+
+The Web Platform Incubator Community Group (WICG) provides a lightweight venue for proposing and discussing new web platform features. The WICG is attached to the World Wide Web Consortium (W3C). W3C is an international community that develops open standards to ensure the long-term growth of the Web.

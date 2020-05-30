@@ -1,0 +1,15 @@
+eBay's Accelerator Data Processing Framework Provides Parallel Execution and Live Recommendations
+
+eBay's Accelerator data processing framework provides parallel execution and automatic organization of source code, input data, and results. It can be used for data analysis, algorithm development as well as a live recommendation system with large data files and several CPUs. It can also help with the administration and bookkeeping of data files, computations, results, and how they are related.
+
+The eBay team recently open sourced the Accelerator framework. The Accelerator was originally developed in 2012 by the Swedish AI company Expertmaker. eBay acquired Expertmaker in 2016. The framework is intended to work on log files such as transaction logs, event logs, and database dumps. Accelerator is a client-server based application -- its architecture includes a runner client and two servers called daemon and urd.
+
+The runner program runs scripts (called build scripts) that execute jobs on the daemon server. This server will load and store information and results for all jobs executed. In parallel, all jobs will be stored by the urd server together with their dependencies in a log-file based database. Everything that takes place in a build script may be recorded to Urd.
+
+The dataset is the Accelerator’s default storage type and is designed for parallel processing and high performance. Datasets are built on top of jobs, so datasets are created by methods and stored in job directories, just like any job result. A single job may contain any number of datasets, so it's possible to split an input dataset into several new datasets.
+
+The key features of Accelerator are the result of reuse and data streaming. If a job already exists, Accelerator will not build the job again. This saves execution time and helps sharing results between users. It also provides visibility and ensures determinism. Data streaming helps with processing continuous chunks of data which is much more efficient than performing a query in a database. Streaming is the optimum way to achieve high bandwidth from disk to CPU and makes good use of the operating system’s RAM-based disk buffers.
+
+Accelerator has a small footprint and runs on laptops as well as rack servers. Before being open sourced, it has been in use in projects for companies like Safeway, Starbucks, eBay, and Vodafone.
+
+It's licensed under the Apache 2.0 license. If you are interested in learning more about ExpertMaker Accelerator, checkout its Github repository, installer repository, and the user reference manual.

@@ -1,0 +1,42 @@
+Building a Containerless Future with WebAssembly - Kevin Hoffman at WebAssembly Summit
+
+Kevin Hoffman, distributed systems engineer at Capital One, discussed at the WebAssembly summit the current state of the art in WebAssembly and what can be built with it today. Hoffman peeked at a containerless future where WebAssembly modules are the de-facto unit of immutable deployment in the cloud, at the edge, and in IoT and embedded devices.
+
+Hoffman started with mentioning speed, small footprint, security model, developer productivity, and rapid, continuous deployment as key benefits of Web Assembly in the browser. Those benefits are magnified in a cloud environment where security is particularly important:
+
+We want to verify our workloads haven’t been tampered with. We want to be able to prove provenance, chain of ownership […]. The memory sandbox and memory isolation work for us in the cloud.
+
+Hoffman further illustrated WebAssembly characteristics. WebAssembly files are self-contained, portable files. Microservices can be as small as 2MB. WebAssembly is secure, being immune to buffer overruns. WebAssembly hosts decide what module can/cannot do. Metadata likes hashes and signature can be put in custom sections. The isolated memory sandbox cannot leak or exfiltrate sensitive data. WebAssembly is portable: the same file can run anywhere there is a host, which can be the browser, the cloud, an embedded device, and more. The code is OS-, processor-, and platform-agnostic. WebAssembly does not require containers. However, Hoffman cautioned:
+
+It is only as portable as we make it. It is portable now. The specs call for it to be portable but as a community, we can easily screw that up. So we need to make sure [that] as we go forward we don’t do anything that gets in the way of WebAssembly portability benefits.
+
+WebAssembly is polyglot: the language for the host runtime and Wasm modules are decoupled. The module can be written in almost any language, such as Rust, Go, Zig, AssemblyScript, C, C++, and more. Caveats, however, apply to Go, as the current syscall/js implementation assumes the existence of a JavaScript runtime.
+
+Hoffman continued with listing ways to run WebAssembly outside the browsers and divided the landscape into low-level, mid-level, and high-level runtimes.
+
+Low-level runtimes contain both interpreters and compilers. This category includes hosts such as wasmtime, wasmer, wasm3, or wasmi. An extensive list of runtimes can be found on GitHub.
+
+Using or built on top of the low-level runtimes are the mid-level runtimes. Hoffmann mentioned two open source projects: waPC and wascap.
+
+waPC (for WebAssembly procedure calls) features bi-directional functional calling, arbitrary binary payloads. waPC thus allows passing information back and forth between the host runtime and WebAssembly and working around the WebAssembly limitation of supporting only numerical arguments.
+
+Additionally, the argument passing is managed in a way that is memory agnostic: neither side is aware of the other side’s memory allocation patterns. Interface types (Wasm proposal for interoperability), Emscripten (C/C++) and wasmbindgen (Rust) work by allowing the host to allocate memory inside the guest or vice versa, which means that the interaction is stateful. If the host requests memory allocation for data and then crashes, a recovery mechanism must be built that reconstitutes the Wasm instance with the exact same state it had prior to the crash. Hoffman warned that allocating or freeing memory explicitly across the guest/host boundary is not only cloud-antagonistic but a huge source of potential bugs and memory leaks. waPC is consequently designed to be stateless.
+
+As part of the high-level runtimes, Hoffman mentioned waSCC, built on top of waPC and wascap:
+
+We want developers to build web services or microservices and functions as pure business logic compiled into a WebAssembly module that is secured and signed and then dynamically bound to capabilities. [That] takes away all the boilerplate that we spend on non-functional requirements such as the message broker, HTTP, key-value stores. All is dynamically [bound]. We can leverage the portability and the small size of the WebAssembly module.
+
+At the moment, the host and guest are written in Rust, with a view to having a Go SDK, once Go becomes more compliant with the WebAssembly specifications.
+
+Hoffman used Isaac Newton’s quote relating to the progress achieved by standing on the shoulders of giants to concede that the WebAssembly community may have to build its own shoulders. More tooling is necessary and the community needs to work on education, documentation, developer experience, and more.
+
+Hoffman concluded with a demonstration of tools in each runtime level, which he billed as the most important part of the presentation. The first demo (low-level runtime) features a simple function adding two 32-bit integers (i32) with a source code using the WebAssembly text format, based on S-expressions:
+
+In the last demo of the talk, Hoffman illustrated options enabled by using WebAssembly in the cloud which are not available with containers. Hoffman shows a WebAssembly module running as a service in the cloud being live-swapped with another version without having to provision new resources or dropping requests (zero-downtime deployment). Hoffman proceeded to show how the key-value stored used in the service can also be removed from the host runtime without resulting in a catastrophic service failure. Hoffman additionally live-swapped the key-value store, and commented:
+
+[referring to the key-value store removal] The host is up enough to be able to give me a decent error message so the cluster knows that I failed the health-check or if I have downstream circuit breakers those can all trigger with the appropriate response rather than having a catastrophic failure […]
+[referring to the key-value store swap] Without taking the host down, I can perform a live update of my business logic, and I can perform a live-swap of any capability provider.
+
+The complete talk, including additional technical details and the complete demos, is available on the WebAssembly Summit Youtube channel.
+
+The WebAssembly Summit was held in Silicon Valley, on the 10th of February, 2020. The WebAssembly Summit is a one-day, single-track conference about all things WebAssembly.

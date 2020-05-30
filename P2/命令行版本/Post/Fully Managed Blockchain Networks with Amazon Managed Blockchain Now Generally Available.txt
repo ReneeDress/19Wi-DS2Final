@@ -1,0 +1,15 @@
+Fully Managed Blockchain Networks with Amazon Managed Blockchain Now Generally Available
+
+Introduced at the AWS re:Invent 2018 event, Amazon Managed Blockchain has left preview and reached general availability. This new service aims to simplify creating and managing scalable blockchain networks based on Hyperledger Fabric and, soon, Ethereum.
+
+Amazon Managed Blockchain enables a group of members to execute transactions and share data without the need of a central authority or central server to grant transaction trustworthiness.
+
+Running a blockchain network usually requires each member of the network to provide hardware, install software, and to deal with cryptographic certificates for access control. In addition to this, the network has to be monitored to adapt to transaction load variability. This complexity is where Amazon is trying to provide value to developers with Amazon Managed Blockchain, which can provision network nodes, manage certificates, and take care of scaling the network when required. According to Amazon, developers can set up a managed blockchain network in just few clicks, which will allow them to focus on their own blockchain applications and not on the underlying infrastructure.
+
+Currently, developers can use Hyperledger Fabric, a blockchain framework that Amazon says is well-suited for applications requiring stringent privacy and permission controls with a known set of members. Amazon plans to offer soon the possibility of using Ethereum, which is geared to highly distributed networks.
+
+To create a blockchain network using Amazon Managed Blockchain, you must have an AWS account. Once your network has been created, you can invite other AWS members to join the network, then add peer nodes and deploy your applications. Peer nodes are essentials in that they represent network members. Each member should have at least one node, which will keep a copy of the shared ledger and will interact with other peers to perform new transactions. Peer nodes use fabric-shim 1.2, which provides the APIs for application developers to implement Smart Contracts, also known as chaincodes in Hyperledger Fabric jargon. Network members can add capacity to their network, for example to create or validate transactions, using Managed Blockchain's API. Members can choose the instance type with the amount of CPU and memory they need.
+
+To improve Hyperledger Fabric reliability, Amazon has replaced Apache Kafka, which can be used to ensure sequential delivery of all transactions, with Amazon Quantum Ledger Database (QLDB). Amazon QLDB is a fully managed ledger database used to store transactions granting transparency, immutability, and verifiability under a central trusted authority.
+
+A blockchain is a decentralized, distributed digital ledger able to record transactions across many computers. Transaction records cannot be altered retroactively without altering all subsequent records. This property enables verifying and auditing transactions without using a central authority.

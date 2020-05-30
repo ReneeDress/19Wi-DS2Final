@@ -1,0 +1,25 @@
+Microsoft, Salesforce and the Ethereum Foundation Join Open-Source Hyperledger Blockchain Project
+
+In a recent press release, Hyperledger, an open-source blockchain and distributed ledger project, announced eight new members have joined their consortium including Microsoft, Salesforce and the Ethereum Foundation. These organizations join established members like Airbus, Cisco, IBM and Intel.
+
+The Hyplerledger project is a multi-stakeholder initiative, hosted by the Linux Foundation, which focuses on building blockchain frameworks and tools for enterprises. The existing frameworks include capabilities for smart contract machine development (Hyperledger Burrow), decentralized identity (Hyperledger Indy) and permissioned/permission-less support for Ethereum Virtual Machines (EVM) (Hyperledger Sawtooth). From a tooling perspective, Hyperledger supports the infrastructure for peer-to-peer interactions (Hyperledger Aries), performance benchmarking (Hyperledger Caliper) and shared cryptographic libraries (Hyperledger Ursa). 
+
+Microsoft’s involvement in blockchain goes back several years as they have been building out capabilities in Azure for organizations requiring blockchain-as-a-service capabilities. These investments include Project Bletchley, R3/Corda/Quorum protocol support and Microsoft-Truffle partnership, to name a few. 
+
+In addition, Microsoft has been focused on contributing to open standards and specifications by being a founding member of both the Enterprise Ethereum Alliance (EEA) and the Token Taxonomy Initiative (TTI). With Microsoft’s current involvement in collaborating on open standards, joining the Hyperledger project seemed like a logical next step. Marley Gray, principal program manager on the Azure Blockchain team, explains:
+
+We’re excited to join the Hyperledger community and look forward to rolling up our sleeves and being an active contributor to both discussions and project code. We believe that developing standards and open specifications, as well as collaborating on implementations of them, is critical to removing customer blockers and accelerating blockchain as a mainstream technology. Through our work related to the EEA and TTI, we have identified several opportunities for Microsoft to lean in and contribute code in project areas such as tokens, ledger integration, and developer experience.
+
+Salesforce is relatively new to the blockchain space having recently introduced their low-code blockchain platform for CRM. Their offering was built on Hyperledger Sawtooth and customized for the Salesforce Lightning platform. The goal of Salesforce Blockchain is to:
+
+Lower the barrier for creating trusted partner networks by enabling companies to easily bring together authenticated, distributed data and CRM processes.
+
+The motivation for Salesforce to join the Hyperledger project includes tapping into the broader blockchain community. Adam Caplan, SVP, emerging technology, Salesforce, explains:
+
+Blockchain is quickly becoming a foundational technology for organizations to deliver a truly connected customer experience and Hyperledger has created a great blockchain community that we're excited to learn from and be a part of.
+
+The Ethereum Foundation and Hyperledger have often been seen as competitors. However, this does not seem to be the case moving forward. In a recent tweet, the Ethereum Foundation twitter account shared their support:
+
+The Ethereum Foundation is proud to lend our support to the efforts of both the @EntEthAlliance and @Hyperledger through our membership today. Together, we'll continue to drive forward #Ethereum's progress and adoption.
+
+For additional information about Hyperledger’s open source frameworks and tools, please visit their GitHub repository. 

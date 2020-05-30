@@ -1,0 +1,30 @@
+Recoil - a New State Management Library for React
+
+Recoil is a brand new, experimental JavaScript state management library by Facebook that addresses many of the problems larger applications encounter when using the existing Context API.
+
+Since React is primarily a UI library, developers often use a state management solution alongside React to simplify data handling.
+
+Many of the existing state management solutions are based around the Flux architecture that was introduced by React in 2014. However, while libraries like Redux and MobX ensure that the application state remains consistent, they come with an overhead that is often hard to justify for many applications.
+
+To combat that, React introduced a simple alternative called the Context API that allows developers to share data through the component tree without having to pass props down manually at every level.
+
+Recoil provides a solution to developers who wish to avoid full-blown state management systems, but feel too constrained by the Context API.
+
+Recoil does that by solving three problems with the Context API, as stated by the official documentation:
+
+The component state can only be shared by pushing it up to the common ancestor, but this might include a huge tree that then needs to re-render.
+Context can only store a single value, not an indefinite set of values, each with its own consumers.
+Both of these make it challenging to code-split the top of the tree (where the state has to live) from the leaves of the tree (where the state is used).
+Recoil uses Atoms and Selectors to manage application data. Each Atom includes a unique key and a piece of data it will manage while each Selector represents a piece of derived state that can be based on multiple Atoms.
+
+An excellent example of how to combine the two is the popular todo application that includes two Atoms and a single Selector.
+
+To manage the application data, we create two Atoms. The first includes the raw list items, while the second consists of the filter ('complete', 'incomplete', 'all', etc.).
+
+To display the todo list, we use a Selector that filters out the todo items based on the selected filter.
+
+For a full todo list tutorial as well as a good getting started guide, head over to the official documentation.
+
+Recoil is released under the MIT license and is available on GitHub.
+
+Do not forget that Recoil is considered an experimental solution and might not be ready for use in a production application.

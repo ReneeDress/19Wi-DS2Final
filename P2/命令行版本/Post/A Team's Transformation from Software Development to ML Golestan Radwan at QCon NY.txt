@@ -1,0 +1,27 @@
+A Team's Transformation from Software Development to ML: Golestan Radwan at QCon NY
+
+As companies start to add Big Data and Machine Learning initiatives to their project portfolios, they face several challenges including the teams' transition from software engineering to data engineering and machine learning. Golestan "Sally" Radwan recently spoke at QCon New York 2018 Conference about her experience in leading a traditional software engineering team on a machine learning/AI journey.
+
+Radwan talked about what went well in the transition of a software architect to data architect. Techniques like frequent and visual communication helped them but they had to make some tough technology and people decisions. She discussed three levels of transformation:
+
+Individual
+Team
+Business
+Individual transformation included moving from languages like PHP and Python; changing the technology was not easy. The developers had to get comfortable with handling completely different data structures, formats, and data sources.
+
+They also had to learn to work a lot more closely with DevOps. She advised the developers to learn fast and be ready to make compromises. It's important to lean on your team. Architects should learn about data and machine learning pipelines. Focus on performance of each algorithm and its pros/cons and suitability for different types of data.
+
+Some of the disciplines and resources they relied on for this transformation included the following:
+
+Mathematics (Linear Algebra and Multivariate Calculus)
+Probability & Statistics 
+MOOC's
+Books
+Online resources like Kaggle competitions, Google Colaboratory, AWS ML, and Azure ML
+At the team level, they focused on regular knowledge sharing sessions; "lunch and learn" meetings were held every Thursday, in which team members could share what they learned. They also codifed this knowledge and automated associated processes using CircleCI in order to make the most use of Data Scientists valuable time.
+
+Speaking of Data Science discipline, Radwan suggested to look for some development skills (at least to prototype) when hiring data scientists. Probe their real world understanding to learn how much they care about the big picture, company goals, and how they fit in the organization.
+
+And finally at the organization level, if you have a podium, speak up and set expectations to your stakeholders. Educate and collaborate with other teams. It's important to be clear on targets, goals, and requirements. In the machine learning space, your responsiblility includes privacy, provenance, bias, and quality. Take time to understand the context and implications of what you're doing.
+
+Radwan mentioned the presentation on analyzing the bias in machine learning at QCon.ai 2018 Conference by Rachel Thomas. She concluded the discussion by suggesting the teams resist the urge to overcomplicate things so they can be successful in their machine learning initiatives.

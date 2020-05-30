@@ -1,0 +1,37 @@
+Experiments with Blockchain at Dutch Railways
+
+Testers will sooner or later be asked to test IT-solutions that incorporate blockchain technology. Software development is different for blockchain-based applications; blockchain impacts the way we are used to working, said Sanne Visser, a software tester at Dutch Railways. She spoke about how professionals can deal with blockchain-based software at European Women in Tech.
+
+The first proof of concept at Dutch Railways was a supply chain project where we as a group were inexperienced; for the entire team, it was the first time we were dealing with and figuring out blockchain, explained Visser. They ended up building a minimal viable product (MVP) on hyperledger fabric. Although it worked, Visser claimed it was awful. The main thing that saved them was that they had so much fun along the way, each of them working on it voluntarily, and as such, motivation and spirits were high.
+
+The impact of blockchain on testing is significant mostly because the technology impacts the way we are used to working, said Visser. Each of the usual four stages of software development, development, testing, user acceptance and finally production, is different for blockchain-based applications.
+
+As an example, she mentioned the testing environment where testers control which version of an application is installed and manipulate this to test specific application attributes. With blockchain technology a tester is faced with either no testing environment, or testing on a blockchain "testnet", that is not in their control, said Visser. And even testnets are dissimilar enough to a blockchain in production in a lot of aspects (such as international distribution of nodes) so that testing some quality attributes, such as performance, is difficult or even (for now) impossible, she argued.
+
+Visser encouraged companies to be very experimental to explore blockchain technology. Wherever possible, allow space for investigating whether blockchain technology can add value to an IT-solution, she said. When there is a chance that an immutable, shared ledger offers an added benefit, build an MVP to see if it works for your business, was her advice.
+
+Visser suggested looking at the ecosystem in which you operate, your business partners, competitors, and customers. She stated, "The reason is that shared ledgers work best when they are exactly that, shared. The best use-cases for this technology go across the company borders."
+
+InfoQ is covering European Women in Tech with Q&As and summaries, and interviewed Sanne Visser about her experiences with blockchain.
+
+InfoQ: You mentioned in your talk that people find it hard to understand blockchain technology, or only get parts of it. Why is that?
+
+Sanne Visser: People understand new technology in terms of familiar concepts. Very few people can explain how their cell phone works, but basic concepts are familiar, such as processors or wireless signals. In the same way people understand blockchain technology in bits and pieces, my audience will understand peer-to-peer sharing for instance, but be unfamiliar with merkle trees.
+
+What makes blockchain particularly hard to understand is needing to conceive of software acting as a third party. For example, we understand that banks facilitate payments between us and businesses we buy from; to understand blockchain you need to make the leap that it's not an entity like a bank that facilitates a payment, but software, and this software is called blockchain. That's a big conceptual change in the way we usually think about transactions and ledgers.
+
+InfoQ: What did you do to introduce and spread knowledge about blockchain in your company, and how did that work out?
+
+Visser: To introduce blockchain, I tried a trusted method first. I held presentations explaining how blockchain works. What I wanted to achieve was to start experimenting with the technology within the company, so I was looking for blockchain project opportunities. The presentations were well received but didn't get me the result I was looking for. I tried many different ways to reach my goal; I had a booth at an internal IT market, I published on our intranet, and so forth.
+
+In the end what worked best was specifically reaching out to business managers at senior levels, arranging an introduction and then sitting down with them for a cup of coffee. Presentations work well for spreading awareness, but they did not lead to any blockchain projects; the coffee meetings did.
+
+InfoQ: What did you learn from the proof of concept?
+
+Visser: We made so many mistakes, and without expert help we weren't able to correct or even confirm that we had made mistakes. The main lesson from the first PoC, is that we would have liked to have expert help to steer us away from the worst errors. Just to give an example: we had entire photographs uploading to the blockchain, and I now know you shouldn't store huge amounts of data like that on a blockchain. The alternative to reaching out for expert help would be to turn to the blockchain development community; unfortunately, this was not an option for us as we had to keep all project details in-company.
+
+InfoQ: How does blockchain technology impact the testing profession?
+
+Visser: I think software testers, sooner or later, will be asked to test IT-solutions that incorporate blockchain technology, and that the number of blockchain testing projects will grow. There are some good resources for blockchain testers, but they are scattered and hard to find. I want to develop a testing framework for dealing with blockchain-based applications, that combines all the best efforts already out there and hopefully add to them.
+
+Also, I want to form a blockchain testing group to share this knowledge to benefit the entire testing community. I recently received the EuroSTAR Rising Star award; 32 supporters have committed to support me with a half-day of their time. In the next year, I will use that support to help me develop a workshop with a demo-blockchain environment, allowing me to teach testers about the technology, and to let them experiment with ways it might be tested.

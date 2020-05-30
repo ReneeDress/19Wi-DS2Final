@@ -1,0 +1,21 @@
+Playwright 1.0 Release Automates Chromium, Firefox, and WebKit-Based Browsers
+
+The Playwright 1.0 release of the cross-browser testing framework now supports automation with all evergreen browsers based on the Chromium, Firefox, and WebKit browser engines.
+
+Major alternatives to Playwright include Puppeteer, which only supports Chromium-based browsers, and WebDriver, which many consider being somewhat flaky and challenging by comparison.
+
+Playwright leverages Node.js and is available via npm:
+
+Below is the simplest example of using Playwright to browse to a website in three major browsers, where it saves a screenshot for each:
+
+Through Playwright's asynchronous and event-driven architecture, Playwright automatically waits for the UI to be ready rather than a brittle dependency on timeout mechanisms. Playwright can wait for DOM changes, network requests, and other asynchronous changes.
+
+To keep testing fast and efficient, within a single browser context, Playwright can work with multiple web views and contextual behavior to parallelize testing. Other key features include emulating mobile environments, geolocation, and locales to test real user experiences.
+
+Other significant features of Playwright include the ability to automate and test web components, network activity, file uploads and downloads, cross-frame and cross-tab activities, native inputs, web workers, and more.
+
+Playwright currently requires custom patched builds of WebKit and Firefox which get download automatically when installing Playwright. Collaboration is underway with the Firefox and WebKit teams to include these patches in future versions of Firefox and WebKit.
+
+Playwright is open source software available under the Apache 2 license. Developers should follow the Playwright getting started guide. There is also a Try Playwright playground to get started with Playwright and examples for usage with some test runners.
+
+Contributions are welcome via the Playwright contribution guidelines, following the Microsoft open source code of conduct.

@@ -1,0 +1,21 @@
+Microsoft Launches Blockchain-Based Decentralized Identity System
+
+Recently launched in preview by Microsoft, ION is a Decentralized Identifier (DID) network that runs on top of Bitcoin and aims to provide a decentralized identity system and PKI at scale.
+
+Identities are key for most of the things we do in the digital world. As Microsoft vice president Alex Simons writes,
+
+Today, the most common digital identifiers we use are email addresses and usernames, provided to us by apps, services, and organizations. This puts identity providers in a place of control, between us and every digital interaction in our lives.
+
+Decentralized identities promise to change this picture by enabling an ecosystem where large numbers of organizations and individuals can operate securely, while fully preserving their privacy, without any company, organization or group deciding who may participate by controlling identifiers and PKI entries.
+
+ION, short for Identity Overlay Network, is based on the Sidetree protocol, which is backed by the Digital Identity Foundation, a consortium of more than 60 members, including Microsoft, IBM, NEC and others. ION builds on previous efforts that led to the creation of Identity Hubs. The main appeal of ION is its capacity of achieving tens-of-thousands of operations per second, thus overcoming a fundamental limitation of other decentralized identity systems and other systems based on blockchain transactions.
+
+In contrast to bitcoins, identities are not meant to be exchanged nor traded. This made it possible to define the Sidetree protocol in such a way that it can operate at scale without requiring a Layer 2 consensus scheme, trusted validator lists, or other solutions aiming to improve blockchain transaction performance. This is key to understand how Sidetree and ION can achieve such a high operation throughput.
+
+All nodes of the network are able to arrive at the same Decentralized Public Key Infrastructure (DPKI) state for an identifier based solely on applying deterministic protocol rules to chronologically ordered batches of operations anchored on the blockchain, which ION nodes replicate and store via IPFS.
+
+ION is just a step towards Microsoft's vision for decentralized identity, which rests on a few tenets including user-owned identifiers, secure and user-controlled, "off-the-chain" datastores for actual identity data, and more.
+
+Work on ION is not complete, since ION is being released as a preview and is still best suited for use by experienced developers only, says Microsoft. In the coming months, though, ION codebase is expected to evolve rapidly and mature to the point it can be released publicly on Bitcoin mainnet.
+
+If you want to play with ION, you can set up an ION node on any machine or use it on Azure.

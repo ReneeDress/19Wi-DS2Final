@@ -1,0 +1,15 @@
+Microsoft Announces Azure Synapse for Data Warehousing and Analytics
+
+During Microsoft's annual Ignite conference the company announced a new analytics service called Azure Synapse. The service, which is a continuation of Azure SQL Data Warehouse, focuses on bringing enterprise data warehousing and big data analytics into a single service.
+
+With Azure Synapse, Microsoft aims to bring together both data warehouses and data lakes in order to provide a single service for collaboration, building, managing, and analyzing the information. All of these different roles work with the same tooling, named Azure Synapse studio, which has a different look and feel for each of the different personas working with the data, ranging from visual pipelines to queries using the familiar SQL syntax. What's more, Microsoft indicates that it is possible to run TPC-H queries at petabyte-scale or similar, although they do provide best practices to ensure reaching this type of performance. Azure Synapse consists of four components in total, each focused on a different part of processing the various workloads.
+
+SQL Analytics implement T-SQL based analytics, and comes with the capabilities that were previously in Azure SQL Data Warehouse. This is immediately generally available. Moreover, this comes with two different payment schemas.
+SQL pool, where payment is per provisioned data warehouse unit.
+SQL on-demand, where pricing is per TB processed. (Preview)
+Spark provides a deeply integrated Apache Spark experience. (Preview)
+Data Integration allows for hybrid data integration scenarios. (Preview)
+Studio brings all this in a single unified user experience. (Preview)
+Even though some of these components are still in preview, the service itself is now generally available. Therefore, running production workloads is supported while they roll out the new features alongside. As is often the case in Azure, there is tight integration with other Azure services, including the various data platforms and tooling such as Power BI and Azure Machine Learning. However, Azure Synapse not only integrates with its ecosystem, but also with partners like Databricks, Informatica, Accenture, Talend, Panoply, Attunity, Pragmatic Works, and Adatis. Consequently the service is similar to data warehouses from other cloud providers, such as AWS Redshift and Google Cloud's BigQuery.
+
+Azure Synapse aims to ensure a secure and easily manageable environment. For example, there are several built-in options for implementing security around connectivity like firewall integration, as well as encryption both in transit and at rest. There is also the option to implement authentication using Azure Active Directory alongside using username/password logins, and various roles define the privileges available for users. There are also a variety of automated security measures possible, including the option to automatically classify data through discovery and classification, while Advanced Threat Protection provides alerts whenever any suspicious behavior occurs.

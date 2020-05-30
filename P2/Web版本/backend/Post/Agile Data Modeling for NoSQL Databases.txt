@@ -1,0 +1,39 @@
+Agile Data Modeling for NoSQL Databases
+
+Pascal Desmarets, CEO of Hackolade, recently spoke at Data Architecture Summit 2018 Conference about agile modeling for NoSQL databases. He said that data modeling is even more important in NoSQL databases when the constraints provided by normalization have been taken down. Unstructured and polymorphic big data creates challenges both in terms of data governance and regulations (GDPR and PII) and the ability to leverage the information accumulated.
+
+Desmarets also talked about how data modeling helps enterprises migrate from RDBMS to NoSQL. Benefits of data modeling in relational and NoSQL databases include higher application quality, improved data quality, GDPR & privacy identifiable information and business intelligence.
+
+Teams should choose the right NoSQL database based on their requirements. For example, choose key-value store if you need to manage simple schema and faster read/write with no frequent updates. Choose document data store if you have flexible schema with complex querying. Column-oriented databases are good for extreme write speeds with relatively less velocity reads. And graph databases are better for applications requiring traversal between data points where you need the ability to store properties of each data point as well as relationships between them.
+
+He talked about traditional data modeling process and how we are transitioning from data modeling to schema design approach. Conceptual data model has been replaced by domain-driven design (DDD), logical data model is no longer needed, and physical data model is replaced by physical schema design.
+
+In the Agile development process, data modeling has a role in every step of the process, including in production. Data modeling effort becomes a shared responsibility and a dialog between multiple project stakeholders.
+
+He also said that domain-driven design (DDD) and NoSQL are made for each other and there is a direct match between DDD language and the concepts of NoSQL databases. He advocates that coherence is necessary throughout strategy, process, architecture, and technology, as it is preferable to apply all these principles together rather than just one or two in isolation: Domain-Driven Design, Agile development, Data-Centricity, Microservices, Event-Driven architecture, NoSQL, DevOps, and Cloud.
+
+InfoQ spoke with Desmarets about the best practices of data modeling of NoSQL databases and big data management.
+
+InfoQ: Is the data modeling approach different for each NoSQL database type, e.g. time-series database like Cassandra v. graph database like Neo4j?
+
+Pascal Desmarets:   The global method is very similar, but the implementation can be vastly different. To leverage the benefits of NoSQL, it is critical to design data models that are application-specific, so you store information in a way that optimizes query performance. This mind shift can be a challenge for those who have been applying the principles of application-agnostic data modeling for decades. For many of us, the rules of normalization have become second nature, and we have to force ourselves to apply a query-driven approach to schema design for NoSQL databases.
+
+The query-driven methodology is fairly similar for all families of NoSQL databases. But when it comes to the specific aspects of schema design for each technology, the biggest difference is between graph databases and the three other families of NoSQL DBs. The nature of graph databases is such that graph traversal performance -- when executing queries -- requires that an attribute in any other technology, may be promoted to the status of an entity (or node) in the case of a graph database.
+
+Then you have differences within each family of NoSQL databases. For graph databases for examples, there’s a fundamental difference between property graph DBs and RDF triple stores. Within JSON document databases, you will find structural storage differences between Couchbase for example, and MongoDB. Similarly, HBase and Cassandra have very different approaches to data storage.
+
+InfoQ: Can you talk about some best practices in agile modeling of NoSQL databases?
+
+Desmartes:  Data modeling as we’ve known it for decades is under a lot of pressure in the context of Agile development. Despite attempts to make data modeling more agile, it is often viewed as a bottleneck to the speed and cadence of two-week sprints. And data modelers across the world feel left out of the process. The truth is that some form of schema design is indispensable, meaning that data modeling needs to be re-invented to remain relevant.
+
+First, data modeling needs to be an iterative process through the development sprints and through the application lifecycle, instead of being a heavy front-loaded task.
+
+Data modeling also needs to be a collaborative process between data modelers (who are outstanding at abstracting their understanding of the business) and developers (who really understand how to translate requirements into code).
+
+This requires that data modelers be an integral part of the scrum teams.
+
+The methodology needs to be adapted to the development techniques and the technology stack, in particular with a query-driven and application-specific approach as described earlier. It must combine Domain-Driven Design, user experience and flowcharting of business rules, combined with screen wireframes and reports, to derive the application queries to take into account when designing the schemas.
+
+Finally, we need next-gen tools that are nimble and adapted to this new landscape!
+
+He also said that for quite some time, NoSQL database vendors have created a differentiation and a buzz by using terms like ‘schema-less’ or ‘non-relational’. But NoSQL databases are so flexible and powerful that inexperienced users can easily get in trouble if they don’t apply some rigorous techniques. And the vendors now realize that, in order to sell their solutions to enterprises, it is wiser to use the term ‘dynamic schema’ instead. Data modeling (or schema design) is in fact more important when dealing with NoSQL than it was with relational databases. We just need a different kind of data modeling than in the past. And data modelers should embrace Agile development and learn the implications of new technology stacks to prove their added-value in the process.

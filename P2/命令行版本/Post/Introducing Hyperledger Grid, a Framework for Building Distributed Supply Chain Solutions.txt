@@ -1,0 +1,23 @@
+Introducing Hyperledger Grid, a Framework for Building Distributed Supply Chain Solutions
+
+In a recent Hyperledger blog post, a new project has been announced, called Hyperledger Grid. Grid is a framework for integrating distributed ledger technology (DLT) solutions with enterprise business systems for the supply chain industry. The project consists of reference architectures, common data models and smart contracts, all based-upon open standards and industry best practices.
+
+The domain of supply chain management is often brought up when debating the opportunity of blockchain solutions. Well documented use cases include Seafood tracking, Food safety, Pharmaceutical safety and authenticity and Asset maintenance. Since there is established interest in leveraging distributed ledgers across these industries and verticals, the Hyperledger Grid project focuses-on accelerating the development of these solutions through shared capabilities.
+
+The Hyperledger project is known for its blockchain-related tools and platforms. However, the Grid project has made it clear that it is not a blockchain or application:
+
+Hyperledger Grid is a framework. It’s not a blockchain and it’s not an application. Grid is an ecosystem of technologies, frameworks, and libraries that work together, letting application developers make the choice as to which components are most appropriate for their industry or market model.
+
+Hyperledger projects are industry agnostic and are designed to be flexible. Since many enterprise business systems and markets are relatively mature, Grid seeks to integrate with these solutions with other emerging technologies like blockchains, smart contracts and identity providers.
+
+A key component in bridging traditional enterprise systems with other emerging technologies is Sabre:
+
+The initial linkage between Grid and other elements in the stack will be via Sabre, a WebAssembly (WASM) Smart Contract engine. By adopting this approach, Grid asserts the strategic importance of WASM and provides a clear interface for integration with platforms inside and outside of Hyperledger. It is our hope and expectation that WASM and Sabre become a de facto Hyperledger standard. 
+
+The initial implementation of Grid is focused on providing reference implementations of supply chain specific data types, data model and common business logic represented as smart contracts. These artifacts will be constructed based-on existing open standards and best practices. The Grid project will then demonstrate how to combine components from the Hyperledger stack into a single business solution. Some of the scenarios that Grid will be focusing on in the future include Asset transformation, Asset exchange and Asset tracking.
+
+The primary contributors of this project include Cargill, Intel and Bitwise IO. In a recent press release, Cargill vice president Keith Narr explained why they decided to get involved in the Grid project:
+
+Hyperledger Grid is another way to help make food and agricultural supply chains more inclusive – creating new markets for farmers and developing economies. With our wide set of food and agricultural supply chain data, Cargill is leading the industry to work together and improve traceability, trade, food safety, nutrition, farmer livelihoods and more. Hyperledger Grid provides an ecosystem of reusable, open-source digital tools that developers can work with to build products, prototypes and applications that address supply-chain use cases, including traceability, food safety, trade settlement and more.
+
+For additional information on Hyperledger Grid, the project proposal has been published and their code repository is available on GitHub.
